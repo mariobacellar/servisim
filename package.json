@@ -1,0 +1,28 @@
+{
+  "name": "servsim",
+  "version": "1.0.0",
+  "description": "Servsim :: Server Simulator v0.1 :: Mario Bacellar :: [https://www.linkedin.com/in/mariobacellar]",
+  "main": "servsim.js",
+  "dependencies": {
+    "package-lock.json": "^1.0.0",
+    "restify": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "curl http://localhost:8089/client/select/1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariobacellar/servisim.git"
+  },
+  "keywords": [
+    "api",
+    "mock"
+  ],
+  "author": "Bacellar, Mario da Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariobacellar/servisim/issues"
+  },
+  "homepage": "https://github.com/mariobacellar/servisim#readme"
+}
