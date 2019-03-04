@@ -1,10 +1,11 @@
-![Servsim](logo-1.jpg)
-     
+![Servsim](logo.jpg)
+
 # Servsim - Server Simulator v0.1 
 ## Mario da Costa Bacellar
 ###### https://www.linkedin.com/in/mariobacellar
 
 ## Description
+- It is not a <b>sinful</b> server. But you can't forget to disconnect it from your site. It's so fun to use it that you will not even want to talk to the API anymore. It is a sin!<p>
 - It is a program builded to <b>mock APis calls</b>.<p>
 - Basically it persists JSON's files to return to applications that need to consume JSON from APIs that are not yet ready.<p>
 - It is very simple to adapt. Just follow the <b>'client'</b> or <b>'product'</b> logic inner.<p>
