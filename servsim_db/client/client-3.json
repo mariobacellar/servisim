@@ -1,0 +1,27 @@
+{
+	"id": "3",
+	"name": "Mario da Costa Bacellar",
+	"first_name": "Mario",
+	"middle_name": "da Costa",
+	"last_name": "Bacellar",
+	"email": "mario.bacellar@accenture.com",
+	"skills": [
+		{
+			"id": "c++",
+			"level": "5"
+		},
+		{
+			"id": "jms",
+			"level": "6"
+		},
+		{
+			"id": "microsservice",
+			"level": "4"
+		},
+		{
+			"id": "javascript",
+			"level": "7"
+		}
+	],
+	"active": true
+}
