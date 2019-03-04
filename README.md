@@ -1,6 +1,4 @@
 ![Servsim](logo.jpg)
-
-<img src="logo.jpg" alt="Servsim" style="float: center; margin-right: 10px;" />
      
 # Servsim - Server Simulator v0.1 
 ## Mario da Costa Bacellar
