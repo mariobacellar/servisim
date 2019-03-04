@@ -23,9 +23,11 @@
 - curl http://localhost:8089/client/select/1
 
 ## Author
-<b>Mario Bacellar</b> is <b>SME System Integration</b> and <b>Solution Architect</b> with 20+ in Corporate IT Experience and SOA Governance.
-<p>Get in touch: mario.bacellar@gmail.com
+<b>Mario Bacellar</b> is <b>SME System Integration</b> and <b>Solution Architect</b> Solution Architect with more than 20 years of experience in Corporate IT and SOA Governance.<p>
+Get in touch: 
+<li>mario.bacellar@gmail.com</li>
+<li>https://www.linkedin.com/in/mariobacellar</li>
 
 
-_______________________________________________________________________________________________________________________________________
+____
 ©2019 non-Copyright, you can share
