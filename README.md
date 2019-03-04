@@ -1,4 +1,4 @@
-![Servsim](logo.jpg)
+![Servsim](logo-1.jpg)
      
 # Servsim - Server Simulator v0.1 
 ## Mario da Costa Bacellar
