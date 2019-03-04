@@ -30,4 +30,4 @@ Get in touch:
 
 
 ____
-©2019 non-Copyright, you can share
+©2019 No Copyright, You can share!
