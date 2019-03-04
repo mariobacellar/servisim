@@ -1,3 +1,5 @@
+![Servsim](logo.jpg)
+
 # Servsim - Server Simulator v0.1 
 ## Mario da Costa Bacellar
 ###### https://www.linkedin.com/in/mariobacellar
