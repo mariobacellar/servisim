@@ -27,7 +27,7 @@
  He is <b>SME System Integration</b> & <b>Solution Architect</b> +18 years experience in Corporate IT and <b>SOA Governance</b>.<p>
 
  <p align="center">
-  <img src="rio-1.jpg" width="350" alt="Rio de Janeiro" title="Rio de Janeiro">
+  <img src="rio-1.jpg" width="50%" alt="Rio de Janeiro" title="Rio de Janeiro">
 </p>
 
 Get in touch: 
