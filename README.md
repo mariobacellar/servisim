@@ -1,4 +1,4 @@
-![Servisim](logo-1.jpg)
+![Servisim](logo.jpg)
 
 # Servisim - Service Simulator v0.1 
 ## Mario da Costa Bacellar
