@@ -5,7 +5,7 @@
 ###### https://www.linkedin.com/in/mariobacellar
 
 ## Description
-- It is not a <b>sinful</b> server. But you can't forget to disconnect it from your website. It's so fun to use it that you will not even want to talk to the API anymore: <b>It is a sin!</b><p>
+- It is not a <b>sinful</b> server. But you can't forget to disconnect it from your website. It's so fun to use. You will not even want to talk to the API anymore: <b>It is a sin!</b><p>
 - It is a Javascript builded to <b>mock APis calls</b>.<p>
 - Basically, it persist JSON files and when something hits the endpoint, it returns the related JSON.
 - It is very simple to adapt. Just follow the <b>'client'</b> or <b>'product'</b> logic inner.<p>
