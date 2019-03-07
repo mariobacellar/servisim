@@ -24,7 +24,7 @@
 
 ## Author
 <b>Mario Bacellar</b> lives in Rio de Janeiro (Brazil).<br>
- He is <b>SME System Integration</b> & <b>Solution Architect</b> +18 years experience in Corporate IT and <b>SOA Governance</b>.<p>
+ He is <b>SME System Integration</b> & <b>Solution Architect</b> +18 years experience in Corporate IT Solutions and <b>SOA Governance</b>.<p>
 
  <p align="center">
   <img src="rio-1.jpg" width="100%" alt="Rio de Janeiro" title="Rio de Janeiro">
