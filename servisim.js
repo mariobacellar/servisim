@@ -8,17 +8,17 @@ var server = restify.createServer({name:"Servisim :: Service Simulator v0.1 :: M
     server.use(restify.plugins.bodyParser({ mapParams: false })); // It is to get JSON from req.body (post, put, ...)
 
 // Servisim Lib
-const servisimLib = require("./servisim_modules/servisimLib");
+const servisimLib = require("./servisim_modules/servisim_lib");
 
 
 // ************************************************
 // JSONs folder './client'
 // ************************************************
 // Common functions: selectFileJsonById and saveFileJson
-server.get  ("/api/client/select/:id" 			, function(req, res, next) { return servisimLib.selectFileJsonById          (req, res, next, cache	, "client");});
-server.put	("/api/client"						, function(req, res, next) { return servisimLib.saveFileJson                (req, res, next			, "client");});
+server.get  ("/api/client/select/:id", function(req, res, next) { return servisimLib.selectFileJsonById(req, res, next, cache, "client");});
+server.put	("/api/client", function(req, res, next) { return servisimLib.saveFileJson(req, res, next, "client");});
 // A proper function for 'phone_number' field from JSON
-server.post ("/api/client/select/phoneNumber"	, function(req, res, next) { return servisimLib.selectFileJsonByPhoneNumber (req, res, next, cache	, "client");});
+server.post ("/api/client/select/phoneNumber", function(req, res, next) { return servisimLib.selectFileJsonByPhoneNumber (req, res, next, cache	, "client");});
 
 
 
@@ -26,10 +26,10 @@ server.post ("/api/client/select/phoneNumber"	, function(req, res, next) { retur
 // JSONs folder './product'
 // ************************************************
 // Common functions: selectFileJsonById and saveFileJson
-server.get  ("/api/product/select/:id"			, function(req, res, next) { return servisimLib.selectFileJsonById	(req, res, next, cache	, "product");});
-server.put	("/api/product"						, function(req, res, next) { return servisimLib.saveFileJson		(req, res, next			, "product");});
+server.get  ("/api/product/select/:id"			, function(req, res, next) { return servisimLib.selectFileJsonById(req, res, next, cache, "product");});
+server.put	("/api/product"						, function(req, res, next) { return servisimLib.saveFileJson(req, res, next	, "product");});
 // A proper function for 'code' field from JSON
-server.post ("/api/product/select/code"			, function(req, res, next) { return servisimLib.selectFileJsonByCode(req, res, next, cache	, "product");});
+server.post ("/api/product/select/code"			, function(req, res, next) { return servisimLib.selectFileJsonByCode(req, res, next, cache, "product");});
 
 
 // Running on 8090
