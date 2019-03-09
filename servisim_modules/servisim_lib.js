@@ -2,19 +2,19 @@
 const fs = require("fs");
 
 // This folder represents a database. It contains one folder for each JSON object.
-var servisimDB= "servisim_db/";
+const servisimDB= "servisim_db/";
 
 // ******************************************************************************
 // If you have another JSON object to receive, such as 'order', for example, 
 // you can just follow the logic used for those 'client' and 'product ', such as described below:
-// Don't forget create a 'order' folder inside the folder 'servisim/servisim_db /'
+// Don't forget create a 'order' folder inside the folder 'servisim/servisimDB /'
 // ******************************************************************************
 var jsonClient  = "client";
-var clientDB    = servisim_db + jsonClient + "/" + jsonClient;
+var clientDB    = servisimDB + jsonClient + "/" + jsonClient;
 var clientFile  = clientDB  + "-";
 
-var jsonProduct = "product";
-var productDB  = servisim_db + jsonProduct + "/"+ jsonProduct;
+var jsonProduct = "product"; 
+var productDB  = servisimDB + jsonProduct + "/"+ jsonProduct;
 var productFile = productDB + "-";
 // ******************************************************************************
 
@@ -172,7 +172,7 @@ function loadJSON(content, filename, cache){
 };
 
 // ******************************************************************************
-// Save JSON file into specific  servisim_db folder
+// Save JSON file into specific  servisimDB folder
 // ******************************************************************************
 function writeJSON(filename, content){
 	console.log("-> writeJSON");				
