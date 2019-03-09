@@ -13,13 +13,13 @@ You must adapt the <b>'servisim.js'</b> file to you endpoint: (i.e: /cliente/sel
 I used <b>Restify</b> (http://restify.com/) but, you can change the web service framework to your favorite into <b>'servisim.js'</b> file.<p>
 
 **Install**
-<p>npn install
+<p>`npn install`
 
 **Run**
-<p>node servisim
+<p>`node servisim`
 
 **Test**
-<p>curl http://localhost:8089/client/select/1<http://localhost:8089/client/select/1>
+<p>`curl http://localhost:8089/client/select/1<http://localhost:8089/client/select/1>`
 
 **Author**
 <b>Mario Bacellar</b> lives in Rio de Janeiro (Brazil).<br>
