@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "curl http://localhost:8089/client/select/1"
+    "test": "curl http://localhost:8089/api/client/select/1"
   },
   "repository": {
     "type": "git",
