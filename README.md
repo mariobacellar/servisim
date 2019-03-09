@@ -1,6 +1,6 @@
 ![Servisim](logo.jpg)
 [![Build Status](https://travis-ci.org/mariobacellar/servisim.svg?branch=master)](https://travis-ci.org/mariobacellar/servisim)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2cd2d9c4edc24cacbdabb69cd9165a43)]
+![Codacy Badge](https://api.codacy.com/project/badge/Grade/2cd2d9c4edc24cacbdabb69cd9165a43)
 
 # Servisim - Service Simulator v0.1 
 ## Description
@@ -19,7 +19,7 @@ npn install
 node servisim
 
 *Test*
-- curl [http://localhost:8089/client/select/1]
+- curl http://localhost:8089/client/select/1
 
 *Author*
 <b>Mario Bacellar</b> lives in Rio de Janeiro (Brazil).<br>
@@ -31,7 +31,7 @@ node servisim
 
 Get in touch:  
 <li>mario.bacellar@gmail.com</li>
-<li>[https://www.linkedin.com/in/mariobacellar]</li>
+<li>https://www.linkedin.com/in/mariobacellar</li>
 
 ____
 ©2019 No Copyright, You can share!
