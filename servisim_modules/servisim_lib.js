@@ -28,10 +28,68 @@ var content  = null;
 // ******************************************************************************
 
 
+function loadJSON(content, filename, cache){
+	// console.log("-  *****************************");
+	// console.log("-> loadJSON ... filename["+filename+"]");
+	// console.log("-  *****************************");
+	
+	content = null;
+	
+	if ( Object.keys(cache).length>0 ){
+		//console.log("- Cache exist ["+Object.keys(cache).length+"]...  Looking for ["+filename+"]");
+		for (var i = 0; i < Object.keys(cache).length; i++) { 
+			if (cache[i].jsonFile === filename){
+				content  = cache[i].jsonContent;
+				//console.log("- Returnig content ["+JSON.stringify(content)+"] from cache")
+				break; 
+			}	
+		}
+	}
+	// else{
+	// 	console.log("- There is no cache yet ... ["+Object.keys(cache).length+"]");
+	// }
 
-// ************************************************************************************************************************************************************
-// *************************************************                         PUBLIC              **************************************************************
-// ************************************************************************************************************************************************************
+	if (content == null){
+		//console.log("- There is no cache for this file ["+filename+"] ... Loading JSON/content.");
+		content = JSON.parse( fs.readFileSync(filename, 'utf8'));
+		
+		var item = 0 + Object.keys(cache).length;
+		//console.log("- Adding item cahce position=["+item+"]");
+		
+		// Adiciona o json no cache. 
+		cache[ item ] = {
+			value: item, 
+			jsonFile: filename, 
+			jsonContent: content
+		};
+	}	
+	// console.log("-  *****************************");
+	// console.log("<- loadJSON ... content["+JSON.stringify(content)+"]");
+	// console.log("-  *****************************");
+	return content;
+};
+
+// ******************************************************************************
+// Save JSON file into specific  servisimDB folder
+// ******************************************************************************
+function writeJSON(filename, content){
+//	console.log("-> writeJSON");				
+	fs.writeFile(filename, content, function (err) {
+	  if (err) throw err;
+	});
+	// console.log("- Saved...filename["+filename+"] - content["+content+"]");
+	// console.log("<- writeJSON");				
+};
+
+
+// ******************************************************************************
+// This function must be modified if you gonna create another JSON objects.
+// ******************************************************************************
+function getFileName(filename, id, kind){
+	if (kind == jsonClient)   {filename = clientFile  + id + ".json";}	else 
+	if (kind == jsonProduct)  {filename = productFile + id + ".json";}	else throw new Error("Invalid kind("+kind+") parameterJSON file name.");
+	return filename;
+}
 
 
 // ******************************************************************************
@@ -42,7 +100,7 @@ module.exports.selectFileJsonById = function(req, res, next, cache, kind){
 	// console.log("-  *****************************");
 	// console.log("-> selectFileJsonById");
 	// console.log("-  *****************************");
-
+ 
 	id       = req.params.id;
 	//console.log("-  id.......=["+id+"]");
 
@@ -131,68 +189,3 @@ module.exports.saveFileJson = function (req, res, next, kind){
 	next();
 };
 
-// ************************************************************************************************************************************************************
-// *************************************************                       PRIVATE               **************************************************************
-// ************************************************************************************************************************************************************
-function loadJSON(content, filename, cache){
-	// console.log("-  *****************************");
-	// console.log("-> loadJSON ... filename["+filename+"]");
-	// console.log("-  *****************************");
-	
-	content = null;
-	
-	if ( Object.keys(cache).length>0 ){
-		//console.log("- Cache exist ["+Object.keys(cache).length+"]...  Looking for ["+filename+"]");
-		for (var i = 0; i < Object.keys(cache).length; i++) { 
-			if (cache[i].jsonFile === filename){
-				content  = cache[i].jsonContent;
-				//console.log("- Returnig content ["+JSON.stringify(content)+"] from cache")
-				break; 
-			}	
-		}
-	}
-	// else{
-	// 	console.log("- There is no cache yet ... ["+Object.keys(cache).length+"]");
-	// }
-
-	if (content == null){
-		//console.log("- There is no cache for this file ["+filename+"] ... Loading JSON/content.");
-		content = JSON.parse( fs.readFileSync(filename, 'utf8'));
-		
-		var item = 0 + Object.keys(cache).length;
-		//console.log("- Adding item cahce position=["+item+"]");
-		
-		// Adiciona o json no cache. 
-		cache[ item ] = {
-			value: item, 
-			jsonFile: filename, 
-			jsonContent: content
-		};
-	}	
-	// console.log("-  *****************************");
-	// console.log("<- loadJSON ... content["+JSON.stringify(content)+"]");
-	// console.log("-  *****************************");
-	return content;
-};
-
-// ******************************************************************************
-// Save JSON file into specific  servisimDB folder
-// ******************************************************************************
-function writeJSON(filename, content){
-//	console.log("-> writeJSON");				
-	fs.writeFile(filename, content, function (err) {
-	  if (err) throw err;
-	});
-	// console.log("- Saved...filename["+filename+"] - content["+content+"]");
-	// console.log("<- writeJSON");				
-};
-
-
-// ******************************************************************************
-// This function must be modified if you gonna create another JSON objects.
-// ******************************************************************************
-function getFileName(filename, id, kind){
-	if (kind == jsonClient)   {filename = clientFile  + id + ".json";}	else 
-	if (kind == jsonProduct)  {filename = productFile + id + ".json";}	else throw new Error("Invalid kind("+kind+") parameterJSON file name.");
-	return filename;
-}
