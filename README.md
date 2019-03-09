@@ -1,5 +1,6 @@
 ![Servisim](logo.jpg)
 [![Build Status](https://travis-ci.org/mariobacellar/servisim.svg?branch=master)](https://travis-ci.org/mariobacellar/servisim)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2cd2d9c4edc24cacbdabb69cd9165a43)](https://www.codacy.com/app/mariobacellar/servisim?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mariobacellar/servisim&amp;utm_campaign=Badge_Grade)
 
 # Servisim - Service Simulator v0.1 
 ## Mario da Costa Bacellar
