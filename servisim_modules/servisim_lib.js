@@ -9,9 +9,9 @@ const servisimDB= "servisim_db/";
 // you can just follow the logic used for those 'client' and 'product ', such as described below:
 // Don't forget create a 'order' folder inside the folder 'servisim/servisimDB /'
 // ******************************************************************************
-var jsonClient  = "client";
-var clientDB    = servisimDB + jsonClient + "/" + jsonClient;
-var clientFile  = clientDB  + "-";
+const jsonClient  = "client";
+const clientDB    = servisimDB + jsonClient + "/" + jsonClient;
+const clientFile  = clientDB  + "-";
 
 var jsonProduct = "product"; 
 var productDB  = servisimDB + jsonProduct + "/"+ jsonProduct;
@@ -44,10 +44,11 @@ module.exports.selectFileJsonById = function(req, res, next, cache, kind){
 	console.log("-  *****************************");
 
 	id       = req.params.id;
+	console.log("-  id.......=["+id+"]");
+
 	filename = getFileName(filename, id, kind);
 	content  = loadJSON(content, filename, cache);
 
-	console.log("-  id.......=["+id+"]");
 	console.log("-  *****************************");
 	console.log("<- selectFileJsonById");
 	console.log("-  *****************************");
@@ -66,10 +67,11 @@ module.exports.selectFileJsonByPhoneNumber = function (req, res, next, cache, ki
 	console.log("-  *****************************");
 
 	id       = req.body.phone_number;
+	console.log("-  id.......=["+id+"]");
+
 	filename = getFileName(filename, id, kind);
 	content  = loadJSON(content, filename, cache);
 
-	console.log("-  id.......=["+id+"]");
 	console.log("-  *****************************");
 	console.log("<- selectFileJsonByPhoneNumber");
 	console.log("-  *****************************");
@@ -87,10 +89,11 @@ module.exports.selectFileJsonByCode = function (req, res, next, cache, kind){
 	console.log("-  *****************************");
 
 	id		= req.body.code;
+	console.log("-  id.......=["+id+"]");
+
 	filename= getFileName(filename, id, kind);
 	content = loadJSON(content, filename, cache);
 
-	console.log("-  id.......=["+id+"]");
 	console.log("-  *****************************");
 	console.log("<- selectFileJsonByByCode");
 	console.log("-  *****************************");
@@ -191,6 +194,6 @@ function getFileName(filename, id, kind){
 	console.log("-> getFileName ... kind["+kind+"]");
 	if (kind == jsonClient)   {filename = clientFile  + id + ".json";}	else 
 	if (kind == jsonProduct)  {filename = productFile + id + ".json";}	else throw new Error("Invalid kind("+kind+") parameterJSON file name.");
-	console.log("-> getFileName filename=["+filename+"]");
+	console.log("<- getFileName filename=["+filename+"]");
 	return filename;
 }
