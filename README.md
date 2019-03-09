@@ -12,14 +12,14 @@ Into <b>./servisim_db</b> folder you have samples of some fakes JSON.<p>
 You must adapt the <b>'servisim.js'</b> file to you endpoint: (i.e: /cliente/select/1).<p>
 I used <b>Restify</b> (http://restify.com/) but, you can change the web service framework to your favorite into <b>'servisim.js'</b> file.<p>
 
-**Install**
+**Install**<p>
 `npn install`
 
 **Run**<p>
 `node servisim`
 
-**Test**
-<p> `curl http://localhost:8089/client/select/1<http://localhost:8089/client/select/1>`
+**Test**<p>
+`curl http://localhost:8089/client/select/1<http://localhost:8089/client/select/1>`
 
 **Author**
 <b>Mario Bacellar</b> lives in Rio de Janeiro (Brazil).<br>
