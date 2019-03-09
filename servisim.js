@@ -16,10 +16,10 @@ var servisim_lib = require('./servisim_modules/servisim_lib');
 // JSONs folder './client'
 // ************************************************
 // Common functions: selectFileJsonById and saveFileJson
-server.get  ('/client/select/:id' 			, function(req, res, next) { return servisim_lib.selectFileJsonById 		(req, res, next, cache	, 'client');});
-server.put	('/client'						, function(req, res, next) { return servisim_lib.saveFileJson				(req, res, next			, 'client');});
+server.get  ('/api/client/select/:id' 			, function(req, res, next) { return servisim_lib.selectFileJsonById 		(req, res, next, cache	, 'client');});
+server.put	('/api/client'						, function(req, res, next) { return servisim_lib.saveFileJson				(req, res, next			, 'client');});
 // A proper function for 'phone_number' field from JSON
-server.post ('/client/select/phoneNumber'	, function(req, res, next) { return servisim_lib.selectFileJsonByPhoneNumber(req, res, next, cache	, 'client');});
+server.post ('/api/client/select/phoneNumber'	, function(req, res, next) { return servisim_lib.selectFileJsonByPhoneNumber(req, res, next, cache	, 'client');});
 
 
 
@@ -28,10 +28,10 @@ server.post ('/client/select/phoneNumber'	, function(req, res, next) { return se
 // JSONs folder './product'
 // ************************************************
 // Common functions: selectFileJsonById and saveFileJson
-server.get  ('/product/select/:id'			, function(req, res, next) { return servisim_lib.selectFileJsonById	(req, res, next, cache	, 'product');});
-server.put	('/product'						, function(req, res, next) { return servisim_lib.saveFileJson		(req, res, next			, 'product');});
+server.get  ('/api/product/select/:id'			, function(req, res, next) { return servisim_lib.selectFileJsonById	(req, res, next, cache	, 'product');});
+server.put	('/api/product'						, function(req, res, next) { return servisim_lib.saveFileJson		(req, res, next			, 'product');});
 // A proper function for 'code' field from JSON
-server.post ('/product/select/code'			, function(req, res, next) { return servisim_lib.selectFileJsonByCode(req, res, next, cache	, 'product');});
+server.post ('/api/product/select/code'			, function(req, res, next) { return servisim_lib.selectFileJsonByCode(req, res, next, cache	, 'product');});
 
 
 
