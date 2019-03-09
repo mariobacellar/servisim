@@ -15,8 +15,8 @@ I used <b>Restify</b> (http://restify.com/) but, you can change the web service 
 **Install**
 `npn install`
 
-**Run**
-<p> `node servisim`
+**Run**<p>
+`node servisim`
 
 **Test**
 <p> `curl http://localhost:8089/client/select/1<http://localhost:8089/client/select/1>`
