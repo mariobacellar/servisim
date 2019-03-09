@@ -29,7 +29,7 @@
   <img src="rio-1.jpg" width="100%" alt="Rio de Janeiro" title="Rio de Janeiro">
 </p>
 
-Get in touch: 
+Get in touch:  
 <li>mario.bacellar@gmail.com</li>
 <li>https://www.linkedin.com/in/mariobacellar</li>
 
