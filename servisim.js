@@ -3,7 +3,7 @@ const cache = [];
  
 // Restify is as MVC framework for route management. If you want to you can switch to Express, Server.js, ... 
 // The important thing is the functions in lib.
-var restify = require('restify');
+var restify = require("restify");
 var server = restify.createServer({name:"Servisim :: Service Simulator v0.1 :: Mario Bacellar :: [https://www.linkedin.com/in/mariobacellar]"});
     server.use(restify.plugins.bodyParser({ mapParams: false })); // It is to get JSON from req.body (post, put, ...)
 
