@@ -3,7 +3,6 @@
 # Servisim - Service Simulator v0.1 
 ## Mario da Costa Bacellar
 
-
 ## Description
 - It is not a <b>sinful</b> server. But you can't forget to disconnect it from your website. It's so simple to use. You will not even want to talk to the API anymore: <b>It is a sin!</b><p>
 - It is a Javascript builded to <b>mock APis calls</b>.<p>
@@ -33,7 +32,6 @@
 Get in touch: 
 <li>mario.bacellar@gmail.com</li>
 <li>https://www.linkedin.com/in/mariobacellar</li>
-
 
 ____
 ©2019 No Copyright, You can share!
