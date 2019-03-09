@@ -1,29 +1,29 @@
 // Module for read and write file
-const fs = require('fs');
+const fs = require("fs");
 
 // This folder represents a database. It contains one folder for each JSON object.
-var servisim_db = 'servisim_db/';
+var servisimDB= "servisim_db/";
 
 // ******************************************************************************
 // If you have another JSON object to receive, such as 'order', for example, 
 // you can just follow the logic used for those 'client' and 'product ', such as described below:
 // Don't forget create a 'order' folder inside the folder 'servisim/servisim_db /'
 // ******************************************************************************
-var jsonClient  = 'client';
-var client_db   = servisim_db + jsonClient + '/' + jsonClient;
-var client_file = client_db  +'-';
+var jsonClient  = "client";
+var clientDB    = servisim_db + jsonClient + "/" + jsonClient;
+var clientFile  = clientDB  + "-";
 
-var jsonProduct = 'product';
-var product_db  = servisim_db + jsonProduct + '/'+ jsonProduct;
-var product_file= product_db +'-';
+var jsonProduct = "product";
+var productDB  = servisim_db + jsonProduct + "/"+ jsonProduct;
+var productFile = productDB + "-";
 // ******************************************************************************
 
 
 // ******************************************************************************
 // Common variabels
 // ******************************************************************************
-var id       = '';
-var filename = '';
+var id       = "";
+var filename = "";
 var content  = null;
 // ******************************************************************************
 
@@ -121,7 +121,7 @@ module.exports.saveFileJson = function (req, res, next, kind){
 	
 	writeJSON(filename, content);
 	
-	res.send("201");
+	res.send("200");
 	console.log("-  *****************************");
 	console.log("<- saveFileJson");		
 	console.log("-  *****************************");
@@ -177,10 +177,9 @@ function loadJSON(content, filename, cache){
 function writeJSON(filename, content){
 	console.log("-> writeJSON");				
 	fs.writeFile(filename, content, function (err) {
-	  if (err) 
-		  throw err;
+	  if (err) throw err;
 	});
-	console.log('- Saved...filename['+filename+'] - content['+content+']');
+	console.log("- Saved...filename["+filename+"] - content["+content+"]");
 	console.log("<- writeJSON");				
 };
 
@@ -190,8 +189,8 @@ function writeJSON(filename, content){
 // ******************************************************************************
 function getFileName(filename, id, kind){
 	console.log("-> getFileName ... kind["+kind+"]");
-	if (kind == jsonClient)   {filename = client_file  + id + '.json';}	else 
-	if (kind == jsonProduct)  {filename = product_file + id + '.json';}	else throw new Error('Invalid kind('+kind+') parameterJSON file name.');
+	if (kind == jsonClient)   {filename = clientFile  + id + ".json";}	else 
+	if (kind == jsonProduct)  {filename = productFile + id + ".json";}	else throw new Error("Invalid kind("+kind+") parameterJSON file name.");
 	console.log("-> getFileName filename=["+filename+"]");
 	return filename;
 }
