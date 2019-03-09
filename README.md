@@ -2,7 +2,7 @@
 
 # Servisim - Service Simulator v0.1 
 ## Mario da Costa Bacellar
-###### https://www.linkedin.com/in/mariobacellar
+
 
 ## Description
 - It is not a <b>sinful</b> server. But you can't forget to disconnect it from your website. It's so simple to use. You will not even want to talk to the API anymore: <b>It is a sin!</b><p>
@@ -20,7 +20,7 @@
 - node servisim
 
 ## Test
-- curl http://localhost:8089/api/client/select/1
+- curl http://localhost:8089/client/select/1
 
 ## Author
 <b>Mario Bacellar</b> lives in Rio de Janeiro (Brazil).<br>
