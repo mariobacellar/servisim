@@ -19,7 +19,7 @@ I used <b>Restify</b> (http://restify.com/) but, you can change the web service 
 <p>node servisim
 
 **Test**
-<p>curl <http://localhost:8089/client/select/1>
+<p>curl http://localhost:8089/client/select/1<http://localhost:8089/client/select/1>
 
 **Author**
 <b>Mario Bacellar</b> lives in Rio de Janeiro (Brazil).<br>
@@ -31,7 +31,7 @@ I used <b>Restify</b> (http://restify.com/) but, you can change the web service 
 
 Get in touch:  
 <li>mario.bacellar@gmail.com</li>
-<li><https://www.linkedin.com/in/mariobacellar></li>
+<li>https://www.linkedin.com/in/mariobacellar<https://www.linkedin.com/in/mariobacellar></li>
 
 ____
 ©2019 No Copyright, You can share!
