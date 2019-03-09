@@ -11,11 +11,11 @@ const servisimDB= "servisim_db/";
 // ******************************************************************************
 const jsonClient  = "client";
 const clientDB    = servisimDB + jsonClient + "/" + jsonClient;
-const clientFile  = clientDB  + "-";
+const clientFile  = clientDB   + "-";
 
-var jsonProduct = "product"; 
-var productDB  = servisimDB + jsonProduct + "/"+ jsonProduct;
-var productFile = productDB + "-";
+var jsonProduct  = "product"; 
+var productDB    = servisimDB + jsonProduct + "/"+ jsonProduct;
+var productFile  = productDB  + "-";
 // ******************************************************************************
 
 
@@ -39,19 +39,19 @@ var content  = null;
 // The number 1 (in '???-1') is intend to be the 'id' field into JSON object
 // ******************************************************************************
 module.exports.selectFileJsonById = function(req, res, next, cache, kind){
-	console.log("-  *****************************");
-	console.log("-> selectFileJsonById");
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("-> selectFileJsonById");
+	// console.log("-  *****************************");
 
 	id       = req.params.id;
-	console.log("-  id.......=["+id+"]");
+	//console.log("-  id.......=["+id+"]");
 
 	filename = getFileName(filename, id, kind);
 	content  = loadJSON(content, filename, cache);
 
-	console.log("-  *****************************");
-	console.log("<- selectFileJsonById");
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("<- selectFileJsonById");
+	// console.log("-  *****************************");
 	res.send(content);
 	next();	
 };
@@ -62,19 +62,19 @@ module.exports.selectFileJsonById = function(req, res, next, cache, kind){
 // The number 11972173758 (in '???-11972173758') is intend to be the 'phone_number' field into JSON object
 // ******************************************************************************
 module.exports.selectFileJsonByPhoneNumber = function (req, res, next, cache, kind){
-	console.log("-  *****************************");
-	console.log("-> selectFileJsonByPhoneNumber");
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("-> selectFileJsonByPhoneNumber");
+	// console.log("-  *****************************");
 
 	id       = req.body.phone_number;
-	console.log("-  id.......=["+id+"]");
+	//console.log("-  id.......=["+id+"]");
 
 	filename = getFileName(filename, id, kind);
 	content  = loadJSON(content, filename, cache);
 
-	console.log("-  *****************************");
-	console.log("<- selectFileJsonByPhoneNumber");
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("<- selectFileJsonByPhoneNumber");
+	// console.log("-  *****************************");
 	res.send(content);
 	next();	
 };
@@ -84,19 +84,19 @@ module.exports.selectFileJsonByPhoneNumber = function (req, res, next, cache, ki
 // The number 10090 (in '???-10090') is intend to be the 'code' field into JSON object
 // ******************************************************************************
 module.exports.selectFileJsonByCode = function (req, res, next, cache, kind){
-	console.log("-  *****************************");
-	console.log("-> selectFileJsonByByCode");
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("-> selectFileJsonByByCode");
+	// console.log("-  *****************************");
 
 	id		= req.body.code;
-	console.log("-  id.......=["+id+"]");
+	//console.log("-  id.......=["+id+"]");
 
 	filename= getFileName(filename, id, kind);
 	content = loadJSON(content, filename, cache);
 
-	console.log("-  *****************************");
-	console.log("<- selectFileJsonByByCode");
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("<- selectFileJsonByByCode");
+	// console.log("-  *****************************");
 	res.send(content);
 	next();	
 };
@@ -107,20 +107,20 @@ module.exports.selectFileJsonByCode = function (req, res, next, cache, kind){
 // The value of 'id' field will be used in file name, eg: client-1.json
 // ******************************************************************************
 module.exports.saveFileJson = function (req, res, next, kind){
-	console.log("-  *****************************");
-	console.log("-> saveFileJson");		
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("-> saveFileJson");		
+	// console.log("-  *****************************");
 
 	id = req.body.id;
-	console.log("-  id.......=["+id+"]");
+	//console.log("-  id.......=["+id+"]");
 	
 	filename = getFileName(filename, id, kind);
-	console.log("- filename=["+filename+"]");
+	//console.log("- filename=["+filename+"]");
 	
 	// It formats the JSON so that everything is not on one line. 
 	// If you want everything on the same line, remove the stringFy parameters by leaving only the req.body	
 	content = JSON.stringify(req.body, null, '\t');
-	console.log("- content=["+content+"]");	
+	//console.log("- content=["+content+"]");	
 	
 	writeJSON(filename, content);
 	
@@ -135,31 +135,32 @@ module.exports.saveFileJson = function (req, res, next, kind){
 // *************************************************                       PRIVATE               **************************************************************
 // ************************************************************************************************************************************************************
 function loadJSON(content, filename, cache){
-	console.log("-  *****************************");
-	console.log("-> loadJSON ... filename["+filename+"]");
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("-> loadJSON ... filename["+filename+"]");
+	// console.log("-  *****************************");
 	
 	content = null;
 	
 	if ( Object.keys(cache).length>0 ){
-		console.log("- Cache exist ["+Object.keys(cache).length+"]...  Looking for ["+filename+"]");
+		//console.log("- Cache exist ["+Object.keys(cache).length+"]...  Looking for ["+filename+"]");
 		for (var i = 0; i < Object.keys(cache).length; i++) { 
 			if (cache[i].jsonFile === filename){
 				content  = cache[i].jsonContent;
-				console.log("- Returnig content ["+JSON.stringify(content)+"] from cache")
+				//console.log("- Returnig content ["+JSON.stringify(content)+"] from cache")
 				break; 
 			}	
 		}
-	}else{
-		console.log("- There is no cache yet ... ["+Object.keys(cache).length+"]");
 	}
+	// else{
+	// 	console.log("- There is no cache yet ... ["+Object.keys(cache).length+"]");
+	// }
 
 	if (content == null){
-		console.log("- There is no cache for this file ["+filename+"] ... Loading JSON/content.");
+		//console.log("- There is no cache for this file ["+filename+"] ... Loading JSON/content.");
 		content = JSON.parse( fs.readFileSync(filename, 'utf8'));
 		
 		var item = 0 + Object.keys(cache).length;
-		console.log("- Adding item cahce position=["+item+"]");
+		//console.log("- Adding item cahce position=["+item+"]");
 		
 		// Adiciona o json no cache. 
 		cache[ item ] = {
@@ -168,9 +169,9 @@ function loadJSON(content, filename, cache){
 			jsonContent: content
 		};
 	}	
-	console.log("-  *****************************");
-	console.log("<- loadJSON ... content["+JSON.stringify(content)+"]");
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("<- loadJSON ... content["+JSON.stringify(content)+"]");
+	// console.log("-  *****************************");
 	return content;
 };
 
@@ -178,12 +179,12 @@ function loadJSON(content, filename, cache){
 // Save JSON file into specific  servisimDB folder
 // ******************************************************************************
 function writeJSON(filename, content){
-	console.log("-> writeJSON");				
+//	console.log("-> writeJSON");				
 	fs.writeFile(filename, content, function (err) {
 	  if (err) throw err;
 	});
-	console.log("- Saved...filename["+filename+"] - content["+content+"]");
-	console.log("<- writeJSON");				
+	// console.log("- Saved...filename["+filename+"] - content["+content+"]");
+	// console.log("<- writeJSON");				
 };
 
 
@@ -191,9 +192,7 @@ function writeJSON(filename, content){
 // This function must be modified if you gonna create another JSON objects.
 // ******************************************************************************
 function getFileName(filename, id, kind){
-	console.log("-> getFileName ... kind["+kind+"]");
 	if (kind == jsonClient)   {filename = clientFile  + id + ".json";}	else 
 	if (kind == jsonProduct)  {filename = productFile + id + ".json";}	else throw new Error("Invalid kind("+kind+") parameterJSON file name.");
-	console.log("<- getFileName filename=["+filename+"]");
 	return filename;
 }
