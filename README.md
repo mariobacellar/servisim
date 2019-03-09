@@ -1,4 +1,5 @@
 ![Servisim](logo.jpg)
+[![Build Status](https://travis-ci.org/mariobacellar/servisim.svg?branch=master)](https://travis-ci.org/mariobacellar/servisim)
 
 # Servisim - Service Simulator v0.1 
 ## Mario da Costa Bacellar
