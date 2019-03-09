@@ -21,7 +21,7 @@
 - node servisim
 
 ## Test
-- curl http://localhost:8089/client/select/1
+- curl http://localhost:8089/api/client/select/1
 
 ## Author
 <b>Mario Bacellar</b> lives in Rio de Janeiro (Brazil).<br>
