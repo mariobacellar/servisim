@@ -51,7 +51,7 @@ function loadJSON(content, filename, cache){
 
 	if (content == null){
 		//console.log("- There is no cache for this file ["+filename+"] ... Loading JSON/content.");
-		content = JSON.parse( fs.readFileSync(filename, 'utf8'));
+		content = JSON.parse( fs.readFileSync(filename, "utf8"));
 		
 		var item = 0 + Object.keys(cache).length;
 		//console.log("- Adding item cahce position=["+item+"]");
@@ -159,7 +159,7 @@ module.exports.selectFileJsonByCode = function (req, res, next, cache, kind){
 	next();	
 };
 
-// ******************************************************************************
+// ****************************************************************************** 
 // Gets the JSON from request.body (content), takes the value from the 'id' field and saves the JSON in the folder indicated by the 'kind' parameter.
 // To use this way of writing JSON must have the 'id' field. (req.id). If you don't have it, you can modify this function or create another function similarly.
 // The value of 'id' field will be used in file name, eg: client-1.json
@@ -177,15 +177,15 @@ module.exports.saveFileJson = function (req, res, next, kind){
 	
 	// It formats the JSON so that everything is not on one line. 
 	// If you want everything on the same line, remove the stringFy parameters by leaving only the req.body	
-	content = JSON.stringify(req.body, null, '\t');
+	content = JSON.stringify(req.body, null, "\t");
 	//console.log("- content=["+content+"]");	
 	
 	writeJSON(filename, content);
 	
 	res.send("200");
-	console.log("-  *****************************");
-	console.log("<- saveFileJson");		
-	console.log("-  *****************************");
+	// console.log("-  *****************************");
+	// console.log("<- saveFileJson");		
+	// console.log("-  *****************************");
 	next();
 };
 
