@@ -33,5 +33,13 @@ Get in touch:
 <li>mario.bacellar@gmail.com</li>
 <li>https://www.linkedin.com/in/mariobacellar<https://www.linkedin.com/in/mariobacellar></li>
 
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="satya-pati-562193171"><a class="LI-simple-link" href='https://in.linkedin.com/in/mariobacellar?trk=profile-badge'>Mario Bacellar</a></div>
+-->
+<!--badge2 preferable -->
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="satya-pati-562193171"><a class="LI-simple-link" href='https://in.linkedin.com/in/mariobacellar?trk=profile-badge'>Mario Bacellar</a></div>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
 ____
 ©2019 No Copyright, You can share!
