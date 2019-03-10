@@ -36,3 +36,4 @@ server.post ("/api/product/select/code"			, function(req, res, next) { return se
 server.listen(8089, function(){ console.log('%s listening at %s', server.name, server.url);});
 //https://travis-ci.org/mariobacellar/servisim
 //https://app.codacy.com/projects
+//https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
