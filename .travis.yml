@@ -5,3 +5,14 @@ install:
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
+sudo: false
+node_js:
+  - 10
+  - 9
+  - 8
+  - 7
+  - 6
+install:
+  - cd istanbul-mocha && npm install && cd ..
+script:
+  - cd istanbul-mocha && npm test
