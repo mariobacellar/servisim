@@ -10,7 +10,7 @@ Basically, it persist JSON files and when something hits the endpoint, it return
 It is very simple to adapt. Just follow the <b>'client'</b> or <b>'product'</b> logic inner.<p>
 Into <b>./servisim_db</b> folder you have samples of some fakes JSON.<p>
 You must adapt the <b>'servisim.js'</b> file to you endpoint: (i.e: /cliente/select/1).<p>
-I used <b>Restify</b> (http://restify.com/<http://restify.com/>) but, you can change the web service framework to your favorite into <b>'servisim.js'</b> file.<p>
+I used <b>Restify</b> (http://restify.com) but, you can change the web service framework to your favorite into <b>'servisim.js'</b> file.<p>
 
 **Install**<p>
 `npn install`
