@@ -23,12 +23,10 @@ I used <b>Restify</b> (http://restify.com) but, you can change the web service f
 `curl http://localhost:8089/client/select/1`
 
 **Author**
-<b>Mario Bacellar</b> lives in Rio de Janeiro (Brazil).<br>
- He is <b>SME System Integration</b> & <b>Solution Architect</b> +18 years experience in Corporate IT Solutions and <b>SOA Governance</b>.<p>
+<b>Mario Bacellar</b> is <b>SME System Integration</b> & <b>Solution Architect</b><p> 
++18 years experience in Corporate IT Solutions and <b>SOA Governance</b>.
+<p>
 
- <p align="center">
-  <img src="rio-1.jpg" width="100%" alt="Rio de Janeiro" title="Rio de Janeiro">
-</p>
 
 Get in touch:  
 <li>mario.bacellar@gmail.com</li>
