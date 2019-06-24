@@ -26,11 +26,12 @@ I used <b>Restify</b> (http://restify.com) but, you can change the web service f
 <p><i><u>Mario da Costa Bacellar</u></i> is <i>SME System Integration</i> as <i>Solution Architect</i>  and postgraduate at 2015 by Universidade Federal do Rio de Janeiro in Computer Engineering and Systems, MBA. He has +19 years experience in Enterprise IT Solutions and <u>SOA Governance</u>.
 <p>
 
-<b>Get in touch:</b>  
+**Get in touch:**
 <li>mario.bacellar@gmail.com</li>
 <li>https://www.linkedin.com/in/mariobacellar<https://www.linkedin.com/in/mariobacellar></li>
-  
-<b>Aplicação tá pronta. Mas e as APIs? Salvo pelo Node. (Node e Oracle?)</b>
+<p>
+
+**Aplicação tá pronta. Mas e as APIs? Salvo pelo Node. (Node e Oracle?)**
 <li>https://www.linkedin.com/pulse/aplica%C3%A7%C3%A3o-t%C3%A1-pronta-mas-e-apis-salvo-pelo-nodejs-mais-mario-bacellar</li>
 
 ____
