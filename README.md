@@ -29,6 +29,9 @@ I used <b>Restify</b> (http://restify.com) but, you can change the web service f
 <b>Get in touch:</b>  
 <li>mario.bacellar@gmail.com</li>
 <li>https://www.linkedin.com/in/mariobacellar<https://www.linkedin.com/in/mariobacellar></li>
+  
+<b>Aplicação tá pronta. Mas e as APIs? Salvo pelo Node. (Node e Oracle?)</b>
+<li>https://www.linkedin.com/pulse/aplica%C3%A7%C3%A3o-t%C3%A1-pronta-mas-e-apis-salvo-pelo-nodejs-mais-mario-bacellar</li>
 
 ____
 ©2019 No Copyright, You can share!
