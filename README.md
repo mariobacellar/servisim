@@ -23,7 +23,7 @@ I used <b>Restify</b> (http://restify.com) but, you can change the web service f
 `curl http://localhost:8089/client/select/1`
 
 **Author**
-<b>Mario Bacellar</b> is <b>SME System Integration</b> & <b>Solution Architect</b><p> 
+<p><b>Mario Bacellar</b> is <b>SME System Integration</b> & <b>Solution Architect</b><p> 
 +18 years experience in Corporate IT Solutions and <b>SOA Governance</b>.
 <p>
 
