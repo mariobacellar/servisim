@@ -29,7 +29,7 @@ I used <b>Restify</b> (http://restify.com) but, you can change the web service f
 **Get in touch:**
 <li>mario.bacellar@gmail.com</li>
 <li>https://www.linkedin.com/in/mariobacellar<https://www.linkedin.com/in/mariobacellar></li>
-<li>https://mariobacellar.herokuapp.com</li>
+<li>https://mariobacellar-presentation.herokuapp.com/</li>
 <p>
 
 **Aplicação tá pronta. Mas e as APIs? Salvo pelo Node. (Node e Oracle?)**
