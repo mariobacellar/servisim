@@ -20,7 +20,7 @@ I used <b>Restify</b> (http://restify.com) but, you can change the web service f
 `node servisim`
 
 **Test**<p>
-`curl http://localhost:8089/client/select/1`
+`curl http://localhost:8089/api/client/select/1`
 
 **Author**
 <p><i><u>Mario da Costa Bacellar</u></i> is <i>SME System Integration</i> as <i>Solution Architect</i>  and postgraduate at 2015 by Universidade Federal do Rio de Janeiro in Computer Engineering and Systems, MBA. He has +19 years experience in Enterprise IT Solutions and <u>SOA Governance</u>.
